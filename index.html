@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Model portfolio i København med fashion, editorial, fitness og commercial work.">
+  <meta property="og:title" content="Casting Model | Portfolio">
+  <meta property="og:description" content="Book model til photoshoots, campaigns, lookbooks og kreative samarbejder.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/portfolio-05.jpg">
+  <title>Casting Model | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="#top">Casting Model</a>
+    <button class="menu-toggle" type="button" aria-label="Åbn menu" aria-expanded="false">☰</button>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="overlay">
+        <p class="eyebrow">Copenhagen based portfolio</p>
+        <h1>Professional Model</h1>
+        <p>Fashion · Editorial · Fitness · Commercial</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <section id="about" class="container fade-in">
+      <h2>About Me</h2>
+      <p>
+        Based in Copenhagen and available for photoshoots, campaigns, commercials,
+        lookbooks and creative collaborations. Comfortable with fashion, lifestyle,
+        fitness and commercial concepts.
+      </p>
+    </section>
+
+    <section id="portfolio" class="container fade-in">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <img src="assets/images/portfolio-05.jpg" alt="Fitness model portfolio photo" loading="lazy">
+        <img src="assets/images/portfolio-03.jpg" alt="Lifestyle model portrait" loading="lazy">
+        <img src="assets/images/portfolio-01.jpg" alt="Editorial model portrait" loading="lazy">
+        <img src="assets/images/portfolio-02.jpg" alt="Commercial portrait photo" loading="lazy">
+        <img src="assets/images/portfolio-04.png" alt="Male fitness model portfolio photo" loading="lazy">
+      </div>
+    </section>
+
+    <section id="services" class="container fade-in">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Fashion Shoots</h3>
+          <p>Editorials, lookbooks, brand shoots and social content.</p>
+        </div>
+        <div class="service-card">
+          <h3>Commercial Work</h3>
+          <p>Campaigns, product visuals, advertising and lifestyle productions.</p>
+        </div>
+        <div class="service-card">
+          <h3>Fitness & Lifestyle</h3>
+          <p>Gym, activewear, wellness and confident everyday concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container fade-in">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Ready for campaigns, lookbooks, studio shoots and creative collaborations.</p>
+          <p>Email: <a href="mailto:kontakt@ditdomæne.dk">kontakt@ditdomæne.dk</a></p>
+          <p>Instagram: <a href="https://instagram.com/ditnavn" target="_blank" rel="noopener">@ditnavn</a></p>
+        </div>
+
+        <form class="contact-form" name="booking" method="POST" action="/tak.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="booking">
+          <p class="bot-field">
+            <label>Leave this empty <input name="bot-field"></label>
+          </p>
+
+          <label for="name">Navn</label>
+          <input type="text" id="name" name="name" placeholder="Dit navn" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="din@email.dk" autocomplete="email" required>
+
+          <label for="project">Opgave</label>
+          <select id="project" name="project" required>
+            <option value="">Vælg type</option>
+            <option value="Fashion shoot">Fashion shoot</option>
+            <option value="Commercial work">Commercial work</option>
+            <option value="Fitness / lifestyle">Fitness / lifestyle</option>
+            <option value="Collaboration">Collaboration</option>
+          </select>
+
+          <label for="message">Besked</label>
+          <textarea id="message" name="message" rows="5" placeholder="Fortæl kort om opgaven" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Casting Model | All rights reserved.</p>
+  </footer>
+
+  <div class="lightbox hidden" aria-hidden="true">
+    <button class="close-lightbox" type="button" aria-label="Luk billede">&times;</button>
+    <img class="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
