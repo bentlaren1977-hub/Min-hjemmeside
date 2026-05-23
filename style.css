@@ -88,7 +88,7 @@ a {
   justify-content: center;
   padding: 120px 20px 70px;
   position: relative;
-  background: url("assets/images/portfolio-05.jpg") center 36% / cover no-repeat;
+  background: url("portfolio-05.jpg") center 36% / cover no-repeat;
 }
 
 .hero::before {
@@ -320,7 +320,7 @@ footer {
   display: grid;
   place-items: center;
   padding: 24px;
-  background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url("assets/images/portfolio-05.jpg") center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.78)), url("portfolio-05.jpg") center / cover no-repeat;
 }
 
 .thanks-box {
@@ -448,3 +448,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
